@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Elevat : MonoBehaviour
+public class Elevator : MonoBehaviour
 {
     //variables for speed
     public float ySpeed = 0; //variable for vertical speed
 
     //variables for borders
 
-    private float yBorder = 4.5f; //variable for vertical border
+    private float yBorder = 14.5f; //variable for vertical border
 
     //variables for move state
 

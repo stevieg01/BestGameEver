@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MouseClick : MonoBehaviour
 {
@@ -16,12 +17,14 @@ public class MouseClick : MonoBehaviour
         //Check for mouse buttons being pressed
         if (Input.GetMouseButtonDown(0))        //if left button is pressed 
         {
-            Debug.Log("Left Click");            //show in console
+            Debug.Log("Left Click");            //show in console 
+            SceneManager.LoadScene("WelcomeScene");
         }
 
         if (Input.GetMouseButtonDown(1))        //if right button is pressed
         {
             Debug.Log("Right Click");           //show in console
+            SceneManager.LoadScene("Lscene");
         }
 
         if (Input.GetMouseButtonDown(2))         //if middle button is pressed
