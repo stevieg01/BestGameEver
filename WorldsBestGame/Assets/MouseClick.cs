@@ -18,19 +18,19 @@ public class MouseClick : MonoBehaviour
         if (Input.GetMouseButtonDown(0))        //if left button is pressed 
         {
             Debug.Log("Left Click");            //show in console 
-            SceneManager.LoadScene("WelcomeScene");
+            SceneManager.LoadScene("WelcomeScene"); SampleScene
         }
 
         if (Input.GetMouseButtonDown(1))        //if right button is pressed
         {
             Debug.Log("Right Click");           //show in console
-            SceneManager.LoadScene("Lscene");
+            SceneManager.LoadScene("Lscene"); WelcomeScene
         }
 
         if (Input.GetMouseButtonDown(2))         //if middle button is pressed
         {
             Debug.Log("Middle Click");           //show in console
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("SampleScene"); Lscene
         }
     }
 
