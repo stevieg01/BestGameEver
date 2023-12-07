@@ -30,6 +30,7 @@ public class MouseClick : MonoBehaviour
         if (Input.GetMouseButtonDown(2))         //if middle button is pressed
         {
             Debug.Log("Middle Click");           //show in console
+            SceneManager.LoadScene("SampleScene");
         }
     }
 

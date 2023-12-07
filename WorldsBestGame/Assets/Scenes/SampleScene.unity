@@ -210,7 +210,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39580847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 219209499}
   m_Layer: 0
   m_Name: Ground 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 873842232}
   - component: {fileID: 873842231}
   - component: {fileID: 873842230}
+  - component: {fileID: 873842233}
   m_Layer: 0
   m_Name: Ground 4
   m_TagString: Ground
@@ -909,6 +910,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873842233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873842229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6c971f58a5f8a44b913be1686026c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &937690537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,8 +1305,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236932738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.1, y: -16.4, z: 0}
-  m_LocalScale: {x: 56.144386, y: 5.4052734, z: 1}
+  m_LocalPosition: {x: 30.9723, y: -21.4013, z: 0}
+  m_LocalScale: {x: 107.82493, y: 16.584229, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1376,14 +1389,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268567735}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0051789405, w: 0.9999866}
   m_LocalPosition: {x: 67.1, y: -7.7123, z: 0}
   m_LocalScale: {x: 0.6295, y: 4.1755, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.593}
 --- !u!61 &1268567738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1625,7 +1638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434542670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.6535, y: 1.2415, z: 0}
+  m_LocalPosition: {x: 39.35, y: 1.2415, z: 0}
   m_LocalScale: {x: 6.584133, y: 1.9171351, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1882,7 +1895,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.25743148, g: 0.27877462, b: 0.6132076, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1955,6 +1968,7 @@ GameObject:
   - component: {fileID: 1770041296}
   - component: {fileID: 1770041295}
   - component: {fileID: 1770041298}
+  - component: {fileID: 1770041299}
   m_Layer: 0
   m_Name: Spring
   m_TagString: Ground
@@ -2036,7 +2050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770041294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.7, y: -7.11, z: 0}
+  m_LocalPosition: {x: 28.39, y: -7.02, z: 0}
   m_LocalScale: {x: -8.979366, y: 2.4556644, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2069,6 +2083,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1770041299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770041294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6c971f58a5f8a44b913be1686026c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1789957904
 GameObject:
   m_ObjectHideFlags: 0
